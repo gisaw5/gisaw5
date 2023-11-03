@@ -183,9 +183,6 @@ components:
     bodycord:
       type: object
       properties:
-        type:
-          type: string
-          example: Point
         name:
           type: string
           example: sawqi
