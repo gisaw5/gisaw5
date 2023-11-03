@@ -86,7 +86,7 @@ paths:
         '400':
           description: Invalid status value
 
-  /UpdateDataGeo:
+  /updatedata:
     put:
       tags:
         - data
@@ -188,10 +188,10 @@ components:
           example: Point
         name:
           type: string
-          example: bangunan uhuyy
+          example: sawqi
         volume:
           type: string
-          example: anjas
+          example: 31
     AuthResponse:
       type: object
       properties:
@@ -218,10 +218,10 @@ components:
           properties:
             geometry:
               type: string
-              example: "string"
+              example: "sawqi"
             properties:
               type: string
-              example: "string"
+              example: "31"
     
     ReqData:
       type: object
@@ -231,10 +231,10 @@ components:
           example: Point
         name:
           type: string
-          example: bangunan uhuyy
+          example: sawqi
         volume:
           type: string
-          example: anjas
+          example: 31
 
     Data:
       type: object
