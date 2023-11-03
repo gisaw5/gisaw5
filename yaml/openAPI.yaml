@@ -157,7 +157,6 @@ components:
         message:
           type: string
           example: Berhasil Input Data
-
     ResponseUpdate:
       type: object
       properties:
@@ -179,12 +178,15 @@ components:
     InsertData:
       type: object
       properties:
+        type:
+          type: string
+          example: Point
         name:
           type: string
-          example: coba
+          example: sawqi
         volume:
           type: string
-          example: 21
+          example: coba
     bodycord:
       type: object
       properties:
