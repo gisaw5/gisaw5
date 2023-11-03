@@ -66,6 +66,10 @@ paths:
                 $ref: '#/components/schemas/ResponseInsert'
         '405':
           description: Invalid input          
+      security:
+         - token:
+            - write:apiKey
+            - read:apiKey
 
   /function-2:
     get:
@@ -85,7 +89,10 @@ paths:
                   $ref: '#/components/schemas/responseUser'
         '400':
           description: Invalid status value
-
+      security:
+         - token:
+            - write:apiKey
+            - read:apiKey
   /updatedata:
     put:
       tags:
