@@ -50,7 +50,7 @@ paths:
       tags:
         - data
       summary: Insert Data Geo
-      description: Insert data nama by volume geo
+      description: Insert data nama by volume
       operationId: authService
       requestBody:
         content:
