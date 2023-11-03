@@ -85,6 +85,10 @@ paths:
                   $ref: '#/components/schemas/responseUser'
         '400':
           description: Invalid status value
+            security:
+        - token:
+          - write:apiKey
+          - read:apiKey
 
   /updatedata:
     put:
