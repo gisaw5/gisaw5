@@ -45,13 +45,6 @@ paths:
                 $ref: '#/components/schemas/AuthResponse'
         '405':
           description: Invalid input
-          
-
-      
-        
-
-
- 
   /InsertDataGeo:
     post:
       tags:
