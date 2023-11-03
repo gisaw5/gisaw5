@@ -45,7 +45,7 @@ paths:
                 $ref: '#/components/schemas/AuthResponse'
         '405':
           description: Invalid input
-  /InsertDataGeo:
+  /cobagis:
     post:
       tags:
         - data
@@ -157,6 +157,7 @@ components:
         message:
           type: string
           example: Berhasil Input Data
+
     ResponseUpdate:
       type: object
       properties:
@@ -178,15 +179,12 @@ components:
     InsertData:
       type: object
       properties:
-        type:
-          type: string
-          example: Point
         name:
           type: string
-          example: sawqi
+          example: coba
         volume:
           type: string
-          example: anjas
+          example: 21
     bodycord:
       type: object
       properties:
@@ -204,13 +202,13 @@ components:
       properties:
         status:
           type: bool
-          example: true
+          example: false
         token:
           type: string
-          example: anjass
+          example: salah
         message:
           type: string
-          example: Selamat Datang
+          example: salah
     responseUser:
       type: object
       properties:
