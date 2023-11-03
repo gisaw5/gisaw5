@@ -66,12 +66,8 @@ paths:
                 $ref: '#/components/schemas/ResponseInsert'
         '405':
           description: Invalid input          
-      security:
-        - token:
-          - write:apiKey
-          - read:apiKey
 
-  /GetDataGeo:
+  /function-2:
     get:
       tags:
         - data
@@ -89,10 +85,7 @@ paths:
                   $ref: '#/components/schemas/responseUser'
         '400':
           description: Invalid status value
-      security:
-        - token:
-          - write:apiKey
-          - read:apiKey
+
   /UpdateDataGeo:
     put:
       tags:
@@ -225,10 +218,10 @@ components:
           properties:
             geometry:
               type: string
-              example: Point
+              example: "string"
             properties:
               type: string
-              example: Penang Swalayan
+              example: "string"
     
     ReqData:
       type: object
